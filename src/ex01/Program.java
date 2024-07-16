@@ -6,6 +6,7 @@ public class Program {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
+        in.close();
 
         if (num <= 1) {
             System.err.println("IllegalArgument");
@@ -23,7 +24,5 @@ public class Program {
 
             System.out.println(isPrime + " " + iter);
         }
-
-        in.close();
     }
 }
